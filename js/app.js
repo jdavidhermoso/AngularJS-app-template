@@ -36,6 +36,44 @@
 	});//ReviewController
 
 
+	/* Directives */
+
+	app.directive('pizzaTitle',function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'pizza-title.html'
+		}
+	});//pizzaTitle directive
+
+	app.directive('panelTabs',function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'panel-tabs.html'
+		}
+	});//panelTabs directive
+
+	app.directive('pizzaDescription',function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'pizza-description.html'
+		}
+	});//pizza description directive
+
+	app.directive('pizzaIngredients',function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'pizza-ingredients.html'
+		}
+	});//pizza ingredients directive
+
+	app.directive('pizzaReviews',function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'pizza-reviews.html'
+		}
+	});//pizza reviews directive
+
+
 	var pizzas = 
 	[
 		{
@@ -71,18 +109,18 @@
 				{
 					stars: '4',
 					comment: 'Very common flavour, but very good taste. I love it!',
-					author: 'johnny34@email.com'
+					author: 'Joshua87@email.com'
 				},
 				{
 					stars: '4',
-					comment: 'Very common flavour, but very good taste. I love it!',
-					author: 'johnny34@email.com'
+					comment: 'I love it because of its classical flavour',
+					author: 'iLovePizza@email.com'
 				}
 			]
 		},
 		{
-			name: 'Margherita',
-			price: 5.95,
+			name: 'Hawaii',
+			price: 6.95,
 			available: true,
 			commonIngredients: 
 			[
@@ -99,27 +137,118 @@
 			flavourIngredients: 
 			[
 				{
-					ing: 'Pepper',					
+					ing: 'Pinapple',					
 				},
-				{
-					ing: 'Basil'
-				}
+				
 				
 			],
 
-			image: 'margherita.jpeg',
+			image: 'hawaii.jpeg',
 			reviews:
 			[
 				{
-					stars: '4',
-					comment: 'Very common flavour, but very good taste. I love it!',
-					author: 'johnny34@email.com'
+					stars: '1',
+					comment: 'How can someone eat a pinapple pizza? It have a sweet flavour. I hate it!',
+					author: 'classcalBob@email.com'
 				},
 				{
-					stars: '4',
-					comment: 'Very common flavour, but very good taste. I love it!',
-					author: 'johnny34@email.com'
+					stars: '5',
+					comment: 'I really like this pizza because it has a fresh flavour.',
+					author: 'max82@email.com'
 				}
+			]
+		},
+		{
+			name: 'Pepperoni',
+			price: 6.95,
+			available: true,
+			commonIngredients: 
+			[
+				{
+					ing: 'Tomato'
+				},
+				{
+					ing: 'Mozzarella'
+				},
+				{
+					ing: 'Oregano'
+				}
+			],
+			flavourIngredients: 
+			[
+				{
+					ing: 'Pepperoni',					
+				},
+				
+				
+			],
+
+			image: 'pepperoni.jpeg',
+			reviews:
+			[
+				
+			]
+		},
+		{
+			name: 'Napolitana',
+			price: 6.95,
+			available: true,
+			commonIngredients: 
+			[
+				{
+					ing: 'Tomato'
+				},
+				{
+					ing: 'Mozzarella'
+				},
+				{
+					ing: 'Oregano'
+				}
+			],
+			flavourIngredients: 
+			[
+				{
+					ing: 'Spinach',					
+				},
+				
+				
+			],
+
+			image: 'napolitana.jpeg',
+			reviews:
+			[
+				
+			]
+		},
+		{
+			name: 'Prosciuto',
+			price: 6.95,
+			available: true,
+			commonIngredients: 
+			[
+				{
+					ing: 'Tomato'
+				},
+				{
+					ing: 'Mozzarella'
+				},
+				{
+					ing: 'Oregano'
+				}
+			],
+			flavourIngredients: 
+			[
+				{
+					ing: 'Spinach',					
+				},
+				
+				
+			],
+
+			image: 'prosciuto.jpeg',
+			reviews:
+			[
+				
 			]
 		}
 		

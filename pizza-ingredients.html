@@ -1,0 +1,13 @@
+<div ng-show="panel.isActive(2)">
+	<h4> Ingredients </h4>
+
+	<ul class="list-unstyled ingredients-list" >
+		<li ng-repeat="ingr in pizza.commonIngredients">
+			{{ingr.ing}}
+		</li>
+										
+		<li ng-repeat="ingr in pizza.flavourIngredients">
+			{{ingr.ing}}
+		</li>
+	</ul>
+</div>

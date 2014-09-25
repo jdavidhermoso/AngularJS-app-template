@@ -3,6 +3,8 @@
 
 I am working on this project, following the CodeSchool course: 'Shaping up with AngularJS'.
 
+http://campus.codeschool.com/courses/shaping-up-with-angular-js/
+
 Because of this, you can notice I use divs at the start, and later, I use custom directives to give sense to the HTML in the app.
 
 This is a the menu front-end of a fictitious pizzeria in London, which I called 'The developer', in Italian, 'Il programmatore'. 
