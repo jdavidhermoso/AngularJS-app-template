@@ -3,10 +3,7 @@ main{
 	overflow: hidden;
 }
 
-.product-image{
-	width: 70%;
-	max-width: 70%;
-}
+
 
 fieldset{
 	border: none!important;
@@ -16,8 +13,4 @@ fieldset{
 }
 .ingredients-list li{
 	padding: 10px;
-}
-section{
-
-	position: fixed;
 }

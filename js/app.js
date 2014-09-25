@@ -8,21 +8,6 @@
 
 	}); //PizzeriaController
 
-	app.controller('PanelController', function(){
-		this.panel = 1;
-
-		this.isActive = function(panel){
-			return this.panel === panel;
-		};
-
-		this.selectPanel = function(selectedPanel){
-
-			this.panel = selectedPanel;
-		};
-
-	});//PanelController
-
-
 	app.controller('ReviewController',function(){
 		this.review = {};
 
@@ -45,34 +30,25 @@
 		}
 	});//pizzaTitle directive
 
-	app.directive('panelTabs',function(){
+	app.directive('pizzaPanels',function(){
 		return {
 			restrict: 'E',
-			templateUrl: 'panel-tabs.html'
-		}
-	});//panelTabs directive
+			templateUrl: 'pizza-panels.html',
+			controller:function(){
+				this.panel = 1;
 
-	app.directive('pizzaDescription',function(){
-		return {
-			restrict: 'E',
-			templateUrl: 'pizza-description.html'
-		}
-	});//pizza description directive
+				this.isActive = function(panel){
+					return this.panel === panel;
+				};
 
-	app.directive('pizzaIngredients',function(){
-		return {
-			restrict: 'E',
-			templateUrl: 'pizza-ingredients.html'
-		}
-	});//pizza ingredients directive
+				this.selectPanel = function(selectedPanel){
 
-	app.directive('pizzaReviews',function(){
-		return {
-			restrict: 'E',
-			templateUrl: 'pizza-reviews.html'
+					this.panel = selectedPanel;
+				};
+			},
+			controllerAs:'panel'
 		}
-	});//pizza reviews directive
-
+	});//pizzaTitle directive
 
 	var pizzas = 
 	[
