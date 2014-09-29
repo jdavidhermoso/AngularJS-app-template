@@ -15,13 +15,10 @@
 
 			product.reviews.push(this.review);
 			this.review = {};
-		};
-
+		}; //reviewProduct();
+			
 
 	});//ReviewController
-
-
-	
 
 	var pizzas = 
 	[

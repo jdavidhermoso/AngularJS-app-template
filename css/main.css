@@ -5,20 +5,73 @@ html,body{
 	height: 100%;
 	max-height: 100%;
 
-	background-color: red!important;
+	background-image: url('../images/bg_1.jpeg');
 
 	margin: 0;
 	padding: 0;
 }
 
+header{
+	
+	background-image: url('../images/bg_2_1.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	padding: 5%;
+	border-radius: 20px;
+	text-align: center;
+}
+
+
+h1{
+	
+
+	color: #FF0F0F;
+}
+
+h2{
+	
+	font-weight: 800;
+	color: #FF0F0F;
+}
+h3,h4{
+	color: #FFFFFF;
+}
 main{
 
 	overflow: hidden;
+	background-color: #0C7624;
+	padding: 5%;
+	margin-top: 2%;
+	border-radius: 20px;
 }
-img{
+
+main img{
 	width: 70%;
 	max-width: 200px;	
+
+	margin: 0 auto;
 }
+
+main a{
+	color: #FFFFFF;
+}
+.active a{
+	background-color: #FF0F0F!important;
+
+}
+
+:not(.active)a:hover{
+	background-color: #F5FAA0!important;
+	
+}
+
+blockquote{
+	color: #FFFFFF;
+	background-color: rgba(255, 201, 246, 0.4);
+}
+
 
 fieldset{
 	border: none!important;
@@ -27,8 +80,39 @@ input.ng-valid{
 	border: 2px solid blue;
 }
 .ingredients-list{
+	color: #FFFFFF;
 	text-align: center;
 }
+
 .ingredients-list li{
+	
 	padding: 10px;
+	width: 100%;
+	max-width: 100%;
+	display: inline-block;
+	background-color: rgba(255, 201, 246, 0.4);
+	margin: 1%;
 }
+
+
+
+h4{
+	font-size: 200%;
+	text-align: center;
+}
+
+@media screen and (max-width: 800px){
+
+	body{
+		text-align: center;		
+	}
+
+
+	header img{
+		display: block;
+		width: 25%;
+		max-width: 25%;
+		margin: 0 auto;
+	}
+}
+
